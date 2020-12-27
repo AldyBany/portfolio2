@@ -11,6 +11,10 @@ body {
   font-family: 'Poppins';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -70,14 +74,22 @@ header ul a {
   padding: 4em;
 }
 
+.hero h1 {
+  margin-bottom: 1.3em;
+}
+
 .meet-btn {
-  margin: 0 auto;
+  margin: 2.5rem auto;
   width: 200px;
   font-weight: bold;
+  padding: 8px 16px;
+  background-color: #00f7ff;
+  text-align: center;
+  border-radius: .5em;
 }
 
 .meet-btn a {
-  color: #ff64cb;
+  color: #6700ee;
 }
 
 section {
@@ -163,9 +175,48 @@ section {
   background-color: #f7f7f7;
 }
 
-.portfolio-container a img {
+.portfolio-container a img, .portfolio-container a div {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+
+.portfolio-container a div {
+  width: 100%;
+  max-height: 350px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-container a div video {
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact .contact-btn {
+  margin: 2.5rem auto;
+  width: 200px;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #00f7ff;
+  text-align: center;
+  border-radius: .5em;
+}
+
+.contact .contact-btn a {
+  color: #6700ee;
+}
+
+footer {
+  background: #6700ee;
+  padding: 2em;
+  text-align: center;
+  color: #fbf9f8;
 }
 
 @media only screen and (min-width: 800px) {
@@ -200,7 +251,7 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (auto)[3];
-    grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
   }
   .portfolio {
@@ -280,11 +331,11 @@ section {
     margin-top: 15%;
     width: 100%;
   }
-  .portfolio img, .featured img {
+  .portfolio img, .featured .img-content, .portfolio a div {
     float: right;
     max-width: 500px;
   }
-  .portfolio .middle img {
+  .portfolio .middle img, .portfolio .middle div {
     float: left;
     max-width: 500px;
   }
@@ -302,6 +353,21 @@ section {
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
   }
 }
 /*# sourceMappingURL=style.css.map */
