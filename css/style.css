@@ -200,7 +200,7 @@ section {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
   }
   .portfolio {
@@ -280,7 +280,7 @@ section {
     margin-top: 15%;
     width: 100%;
   }
-  .portfolio img, .featured .img-content {
+  .portfolio img, .featured img {
     float: right;
     max-width: 500px;
   }
@@ -302,21 +302,6 @@ section {
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
-  }
-}
-
-@media only screen and (min-width: 1550px) {
-  header {
-    padding: 2em 2em 2em 20em;
-  }
-  .social-header {
-    padding: 2em 20em 2em 0;
-  }
-  section {
-    padding: 6em 20em 4em 20em;
-  }
-  .hero .content {
-    padding: 9em 20em 6em 20em;
   }
 }
 /*# sourceMappingURL=style.css.map */
