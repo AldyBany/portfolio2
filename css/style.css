@@ -78,6 +78,11 @@ header ul a {
   margin-bottom: 1.3em;
 }
 
+.hero-img {
+  margin-left: -50px;
+  position: relative;
+}
+
 .meet-btn {
   margin: 2.5rem auto;
   width: 200px;
