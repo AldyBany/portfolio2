@@ -135,8 +135,26 @@ section{
     font-weight: 500;
 }
 
+ .second{
+    color: #3b3b3b;
+    margin-bottom: 1em;
+    font-size: .85em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+.technologies{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
 .skills{
     background-color: #fe64cb;
+    h2{
+        margin-bottom: 2em;
+        color: $violetColor;
+    }
     .skills-container ul li{
         background-color: $whiteColor;
         padding: 2em;
@@ -149,12 +167,14 @@ section{
         place-content: center;
         i{
             font-size: 2em;
+            color: $violetColor;
         }
     }
 
     .skill-title{
         font-weight: bold;
         margin-bottom: 1rem;
+        color: $violetColor;
     }
 }
 
@@ -180,12 +200,44 @@ section{
     min-height: 50%;
 }
 
+.portfolio{
+    .middle{
+        display: grid;
+        div{
+            order: -1;
+        }
+        .project-details{
+            display: flex;
+            flex-direction: column;
+
+        }
+        // display: flex;
+        // flex-direction: column-reverse;
+
+    }
+}
+
+.links{
+    i{
+        font-size: 1.2em;
+        color: $violetColor;
+    }
+}
+
 .contact{
-    max-width: 600px;
+    text-align: center;
     margin: 0 auto;
+    h2{
+        color: $violetColor;
+    }
+    p{
+        width: 100%;
+        margin: 1em auto 0;
+        text-align: center;
+    }
 }
 .contact .contact-btn{
-    margin: 2.5rem auto;
+    margin: 2rem auto;
     width: 200px;
     font-weight: bold;
     padding: 8px 16px;
@@ -204,6 +256,21 @@ footer{
     padding: 2em;
     text-align: center;
     color: $whiteColor;
+    .social-header-footer{
+        margin-bottom: 2em;
+        ul{
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+        }
+    }
+    li{
+        margin-right: 1em;
+    }
+    i{
+        color: $whiteColor;
+        font-size: 1.5em;
+    }
    
 }
 
@@ -219,8 +286,13 @@ footer{
         display: grid;
         grid-template-columns: 40% auto;
     }
+   
     .middle{
+        display: grid;
         grid-template-columns: auto 40%;
+    }
+    .middle {
+        order: unset;
     }
     .left-content, .portfolio-text{
         display: grid;
@@ -250,6 +322,18 @@ footer{
 
     .portfolio-container img:not(1), .middle-text{
         margin-left: 2em;
+    }
+    .middle div{
+        order: unset;
+    }
+    .portfolio{
+        .middle{
+            display: grid;
+            div{
+                order: 1;
+            }
+           
+        }
     }
 
    
@@ -324,6 +408,9 @@ footer{
         margin-top: 15%;
         width: 100%;
     }
+    .middle div{
+        order: unset;
+    }
     .portfolio img,.featured .img-content, .portfolio a div{
         float: right;
         max-width: 500px;
@@ -331,6 +418,15 @@ footer{
     .portfolio .middle img, .portfolio .middle div{
         float: left;
         max-width: 500px;
+    }
+    .portfolio{
+        .middle{
+            display: grid;
+            div{
+                order: 1;
+            }
+           
+        }
     }
 }
 
@@ -361,6 +457,15 @@ footer{
     }
     .hero .content{
         padding: 9em 20em 6em 20em;
+    }
+    .portfolio{
+        .middle{
+            display: grid;
+            div{
+                order: 1;
+            }
+           
+        }
     }
 }
 
