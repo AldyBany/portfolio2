@@ -64,8 +64,18 @@ header{
     text-align: center;
     padding: 4em;
     h1{
-        margin-bottom: 1.3em;
+        margin-bottom: .4em;
     }
+    .featured-desc{
+        color: $whiteColor;
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+.img-box{
+    position: relative;
+    width: 200px;
+    height: 400px;
 }
 
 
@@ -224,11 +234,40 @@ section{
 
     }
 }
-
+.featured-title{
+    a{
+        color:$violetColor;
+    }
+}
 .links{
     i{
         font-size: 1.2em;
+        color: $subtColor;
+    }
+}
+
+.portfolio{
+    h2,.resume{
+        text-align: center;
+    }
+    h2{
         color: $violetColor;
+        margin-bottom: 3em;
+    }
+    text-align: center;
+    .resume{
+        margin-top: 3.5rem;
+    }
+    .resume-btn{
+        margin: 3.5rem auto 0;
+        width: 200px;
+        font-weight: bold;
+        padding: 8px 26px;
+        background-color: #00f7ff;
+        text-align: center;
+        border-radius: .5em;
+        color: $violetColor; 
+        
     }
 }
 
@@ -375,6 +414,7 @@ footer{
     }
 
     .social-header{
+        background: $violetColor;
         display: block;
         ul{
             display: flex;
@@ -383,7 +423,7 @@ footer{
             float: right;
             i{
                 width: 20px;
-                color: black;
+                color: $whiteColor;
             }
         }
     }
@@ -391,7 +431,7 @@ footer{
     .hero{
         display: grid;
         grid-template-columns: 66% auto;
-        background: unset;
+        background: $violetColor;
         padding: 0;
         .content{
             background: $violetColor;
