@@ -113,6 +113,9 @@ section{
 .featured{
     position: relative;
     img{
+        width: 280px;
+        height: 350px;
+        object-fit: cover;
         border-radius: .5em;
     }
 }
@@ -335,6 +338,10 @@ footer{
     .featured,.portfolio-container{
         display: grid;
         grid-template-columns: 40% auto;
+    }
+    
+    .featured .img-content{
+        margin-left: 200px;
     }
    
     .middle{

@@ -119,6 +119,10 @@ section {
 }
 
 .featured img {
+  width: 280px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: .5em;
 }
 
@@ -361,6 +365,9 @@ footer i {
     display: grid;
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
+  }
+  .featured .img-content {
+    margin-left: 200px;
   }
   .middle {
     display: -ms-grid;
