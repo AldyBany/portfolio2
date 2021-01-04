@@ -56,6 +56,10 @@ header{
     }
 }
 
+.name{
+    color: $subtColor;
+}
+
 .social-header{
     display: none;
 }
@@ -451,9 +455,7 @@ footer{
                 font-size: 3em;
                 line-height: 1.2em;
             }
-            .name{
-                color: $subtColor;
-            }
+           
         }
     }
     .meet-btn{
