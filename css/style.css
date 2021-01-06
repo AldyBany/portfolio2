@@ -61,6 +61,10 @@ header ul a {
   padding: 0 1em;
 }
 
+.name {
+  color: #ff64cb;
+}
+
 .social-header {
   display: none;
 }
@@ -480,9 +484,6 @@ footer i {
   .hero .content h1 {
     font-size: 3em;
     line-height: 1.2em;
-  }
-  .hero .content .name {
-    color: #ff64cb;
   }
   .meet-btn {
     margin: unset;
