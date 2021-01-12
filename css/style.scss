@@ -118,9 +118,10 @@ section{
     position: relative;
     img{
         width: 280px;
-        height: 350px;
+        height: 280px;
         object-fit: cover;
-        border-radius: .5em;
+
+        border-radius: 50%;
     }
 }
 
